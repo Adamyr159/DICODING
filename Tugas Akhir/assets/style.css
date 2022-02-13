@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* HEADER CONTENT */
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(img/wisuda.jpg);
+  background-size: cover;
+  font-family: 'Viga', sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(204, 209, 228);
+  display: flex;
+  box-shadow: 0px 7px 5px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+nav .logo {
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1;
+}
+.logo img {
+  width: 15%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+nav .list-item {
+  flex: 2;
+  margin: auto 5px;
+  font-size: 1.2em;
+
+  text-transform: uppercase;
+}
+.list-item ul {
+  display: flex;
+  float: right;
+  margin-right: 2em;
+}
+.list-item li {
+  list-style-type: none;
+  padding: 0 1em;
+}
+.list-item a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  color: rgb(46, 91, 255);
+  text-shadow: 0px 2px 3px rgba(253, 252, 255);
+}
+.list-item a:hover {
+  color: blue;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  box-sizing: border-box;
+
+  font-size: 1.3em;
+  color: rgb(46, 91, 255);
+}
+.jumbotron h1 {
+  text-shadow: 2px 1px rgba(253, 252, 255);
+}
+.jumbotron p {
+  text-shadow: 1px 1px rgba(253, 252, 255);
+}
+.jumbotron h1,
+p {
+  cursor: pointer;
+}
+.jumbotron .daftar {
+  margin-top: 20px;
+}
+.jumbotron .daftar a {
+  background-color: rgb(46, 91, 255);
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgb(34, 34, 241);
+}
+.jumbotron .daftar a:hover {
+  box-shadow: 1px 1px 5px blue;
+  background-color: transparent;
+  color: rgb(46, 91, 255);
+}
+
+/* MAIN CONTENT */
+main {
+  background-color: rgb(233, 240, 255);
+  display: flex;
+}
+.content {
+  padding-top: 70px;
+
+  flex: 3;
+  margin: 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* SECTION 1 */
+.modal h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modal p {
+  margin-bottom: 10px;
+}
+section .table {
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 100%;
+  margin-top: 20px;
+}
+.table-1 th,
+td {
+  border: 1px solid #525252;
+  padding: 8px;
+}
+.table-1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table-1 tr:hover {
+  background-color: #8f8f8f;
+}
+.table-1 th {
+  padding: 12px;
+  background-color: rgb(46, 91, 255);
+}
+
+.div-kosong {
+  height: 70px;
+}
+
+/* SECTION 2 */
+.program-studi {
+  background-color: rgb(221, 221, 221);
+  box-shadow: 7px 7px 6px 8px rgb(63, 63, 63);
+  border-radius: 10px;
+
+  height: 50vh;
+}
+.program-studi h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.prodi-d-flex {
+  display: flex;
+}
+.prodi-d-flex .SI,
+.TI,
+.BD {
+  background-color: rgb(252, 252, 252);
+  margin: 20px 10px;
+  flex: 1;
+  height: 30vh;
+  position: relative;
+  padding: 0 10px;
+  box-shadow: 0px 7px 5px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.prodi-d-flex h3 {
+  text-align: center;
+  margin: 5px 0;
+}
+.prodi-d-flex p {
+  margin: 10px 0;
+}
+.prodi-d-flex a {
+  margin: 20px 0;
+  background-color: rgb(46, 91, 255);
+  text-decoration: none;
+  color: white;
+  padding: 10px 11px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+}
+.prodi-d-flex a:hover {
+  background-color: #ddd;
+  color: rgb(46, 91, 255);
+}
+
+/* ASIDE */
+aside {
+  flex: 1;
+  margin: 20px;
+
+  font-family: 'Poppins', sans-serif;
+}
+.child-aside {
+  border: 2px solid black;
+  padding: 0 20px;
+}
+.profil {
+  margin: 0 auto;
+  width: 50%;
+}
+.profil h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+}
+.profil img {
+  width: 100%;
+
+  box-shadow: 3px 4px 6px 3px black;
+}
+aside h3 {
+  margin: 20px 10px;
+}
+aside table {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.child-aside td {
+  border: none;
+  padding: 5px;
+}
+.child-aside ul {
+  list-style: square inside;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(124, 146, 223);
+  padding: 30px;
+  font-family: 'poppins';
+}
+.child-footer {
+  display: flex;
+}
+.child-footer .gambar {
+  flex: 1;
+  text-align: center;
+}
+.gambar img {
+  width: 50%;
+}
+.child-footer .layanan {
+  flex: 2;
+  display: flex;
+
+  flex-flow: column;
+}
+.layanan .judul-layanan {
+  text-align: center;
+}
+.layanan .isi-layanan {
+  display: flex;
+}
+.layanan .list-1 {
+  flex: 1;
+}
+.layanan .list-2 {
+  flex: 1;
+}
+.layanan ul {
+  list-style: circle inside;
+}
+.layanan li {
+  margin: 20px 0;
+}
+.layanan a {
+  text-decoration: none;
+  color: black;
+}
+.layanan a:hover {
+  color: rgb(92, 92, 92);
+}
+.layanan li:hover {
+  padding-left: 3px;
+}
+.child-footer .info {
+  flex: 2;
+}
+.info img {
+  width: 32px;
+  padding: 10px;
+}
+
+.info .instagram,
+.tiktok,
+.website,
+.no-telp {
+  display: flex;
+  padding: 10px;
+}
+.info a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+.info a:hover {
+  color: rgb(92, 92, 92);
+  padding-left: 3px;
+}
+.info p {
+  padding: 20px 0;
+}
+
+.copyright {
+  font-family: 'poppins';
+  font-size: small;
+  text-align: center;
+  background-color: rgb(124, 146, 223);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 800px) {
+  body {
+    background-color: rgb(233, 240, 255);
+  }
+  header {
+    font-size: 0.5em;
+    background-size: cover;
+    background-position: center;
+  }
+  main {
+    display: block;
+  }
+  .section-1 figure img {
+    width: 100%;
+  }
+
+  aside {
+    margin-top: 50px;
+  }
+  footer {
+    border-top: 3px solid rgb(46, 91, 255);
+  }
+  footer .gambar img {
+    width: 70%;
+  }
+}
